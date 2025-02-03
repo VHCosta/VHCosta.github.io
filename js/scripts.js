@@ -22,13 +22,13 @@ fetch('quotes.json')
         return response.json();
     })
     .then(data => {
-        // Assuming your JSON file structure is: { "quotes": [ ... ] }
+        // JSON file structure is: { "quotes": [ {"text":..., "author":... }, ...] }
         const quote = getRandomQuote(data.quotes);
 
-        // Example: Display the quote in an element with id="quoteDisplay"
+        // Display the quote in an element with id="quoteDisplay"
         const quoteDisplay = document.getElementById('quoteDisplay');
         if (quoteDisplay) {
-            quoteDisplay.innerHTML = "<i>" + quote.text + "</i><br><b> - " + quote.author + "</b>";
+            quoteDisplay.innerHTML = "<i>" + quote.text + "</i><br> - <b>" + quote.author + "</b>";
         }
     })
     .catch(error => console.error('Error loading quotes:', error));
