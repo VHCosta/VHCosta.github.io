@@ -1,0 +1,94 @@
+{
+    "quotes": [
+      {
+        "text": "Code is like humor. When you have to explain it, it’s bad.",
+        "author": "Cory House"
+      },
+      {
+        "text": "Programs must be written for people to read, and only incidentally for machines to execute.",
+        "author": "Harold Abelson"
+      },
+      {
+        "text": "Truth can only be found in one place: the code.",
+        "author": "Robert C. Martin"
+      },
+      {
+        "text": "Talk is cheap. Show me the code.",
+        "author": "Linus Torvalds"
+      },
+      {
+        "text": "The most dangerous phrase in the language is, «We’ve always done it this way».",
+        "author": "Grace Hopper"  
+      },
+      {
+        "text": "The best error message is the one that never shows up.",
+        "author": "Thomas Fuchs"
+      },
+      {
+        "text": "The most disastrous thing that you can ever learn is your first programming language.",
+        "author": "Alan Kay"
+      },
+      {
+        "text": "The most important property of a program is whether it accomplishes the intention of its user.",
+        "author": "C.A.R. Hoare"
+      },
+      {
+        "text": "The only way to learn a new programming language is by writing programs in it.",
+        "author": "Dennis Ritchie"
+      },
+      {
+        "text": "The only way to go fast is to go well.",
+        "author": "Robert C. Martin"
+      },
+      {
+        "text": "The purpose of software engineering is to control complexity, not to create it.",
+        "author": "Pamela Zave"
+      },
+      {
+        "text": "The question of whether computers can think is just like the question of whether submarines can swim.",
+        "author": "Edsger W. Dijkstra"
+      },
+      {
+        "text": "The sooner you start to code, the longer the program will take.",
+        "author": "Roy Carlson"
+      },
+      {
+        "text": "The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.",
+        "author": "Seymour Cray"
+      },
+      {
+        "text": "The truth is that most software is written by a small number of people. What’s important is how they work together.",
+        "author": "Bill Gates"
+      },
+      {
+        "text": "Curse of the self-taught: fear that you know only points here and there, islands of knowledge, and between them are chasms into which you will fall in humiliating failure, a fear that followed me from the first time I learned how to code.",
+        "author": "Ellen Ullman"
+      },
+      {
+        "text": "Programming isn’t about what you know; it’s about what you can figure out.",
+        "author": "Chris Pine"
+      },
+      {
+        "text": "Code is read much more often than it is written",
+        "author": "Guido van Rossum"
+      },
+      {
+        "text": "This was one of the best parts of being a coder, and an artist: the thrill of being in the middle of creating something delightful. It’s like the anticipation of eating freshly baked bread after its aroma fills the room.",
+        "author": "Dr. Joy Buolamwini"
+      },
+      {
+        "text": "Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.",
+        "author": "Patrick McKenzie"
+      },
+      {
+        "text": "The best way to predict the future is to invent it.",
+        "author": "Alan Kay"
+      },
+      {
+        "text": "The code you write makes you a programmer. The code you delete makes you a good one. The code you don’t have to write makes you a great one.",
+        "author": "Mario Fusco"
+      }
+
+    ]
+  }
+  

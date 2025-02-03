@@ -7,6 +7,33 @@
 // Scripts
 // 
 
+// Function to return a random quote from an array
+function getRandomQuote(quotes) {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    return quotes[randomIndex];
+}
+
+// Fetch the quotes from the JSON file
+fetch('quotes.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        // Assuming your JSON file structure is: { "quotes": [ ... ] }
+        const quote = getRandomQuote(data.quotes);
+
+        // Example: Display the quote in an element with id="quoteDisplay"
+        const quoteDisplay = document.getElementById('quoteDisplay');
+        if (quoteDisplay) {
+            quoteDisplay.innerHTML = "<i>" + quote.text + "</i><br><b> - " + quote.author + "</b>";
+        }
+    })
+    .catch(error => console.error('Error loading quotes:', error));
+
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function

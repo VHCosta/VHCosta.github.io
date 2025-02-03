@@ -115,7 +115,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/pokemon-checker.png" alt="..." />
                         </div>
                     </div>
                 </div>
@@ -224,7 +224,7 @@
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
                         <h4 class="text-uppercase mb-4">Quote</h4>
-                        <p class="lead mb-0"><i>Code is like humor. When you have to explain it, it’s bad.</i><br> – Cory House</p>
+                        <p id="quoteDisplay">Loading quote...</p>
                     </div>
                 </div>
             </div>
@@ -252,7 +252,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/runner.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/runner.png" alt="a screenshot of the game Runner featuring a not-copyright-free plumber with a red cap and blue overalls who is running to the right, an enemy headed towards it, and some Level and Score text." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">A side-scroller / endless runner type game made using the SimpleGraphics library.<br>
                                                     This was our first group project at Academia de Código's bootcamp, done over the course of one week.<br>
@@ -292,9 +292,9 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ascii.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ascii.png" alt="a screenshot of a terminal window featuring the BattoruShippo logo, the text for what port it is using is, and informing that it is waiting for connection." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Battorushippo is a text-based Battleship game which runs on a terminal.<br>
+                                    <p class="mb-4">ASCII BattleShip, or BattoruShippo, is a text-based Battleship game which runs on a terminal.<br>
                                                     The game is multithreaded so it accepts multiplayer matches through TCP sockets.<br>
                                                     This was our second group project at Academia de Código, done over the course of a weekend.</p>
                                     <a href="https://github.com/VHCosta/ASCII-Battleship" target="_blank">
@@ -332,7 +332,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/map-editor.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/map-editor.png" alt="a screenshot of the map-editor app with a very minimalist face drawn with it" />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">A graphical editor with a moving cursor, made with SimpleGraphics.<br>
                                                     You can paint squares on a grid to draw something. It features saving and loading from a file.<br>
@@ -372,7 +372,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/concurrent-chat.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/concurrent-chat.png" alt="a screenshot of two terminal windows demonstrating the use of the concurrent-chat app between two parties." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">An IRC-like chat that multiple people can use. <br>
                                                     You can use with NetCat (nc) or Nmap's implementation (ncat).<br>
@@ -413,7 +413,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/i-will-survive.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/i-will-survive.png" alt="A screenshot of the app with the text 'i Will Survive' and a symbol of a scroll wheel" />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">A game that tells the story of i (named after looking like the letter ‘i’), who is going against his biggest enemy, Fear itself, in an Epic Battle of Rock-Paper-Scissors.<br>
                                                     Part of our Hackathon, our final challenge at the Academia de Código, where we had to develop an app/game/service in 24 hours.<br>
@@ -452,7 +452,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Pokémon Availability Checker</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -460,10 +460,31 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/pokemon-checker.png" alt="A screenshot of the Pokémon Availability Checker app" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <p class="mb-4">A two part app, with client and server, for checking availability of Pokémon given a selection of Pokémon games.<br>
+                                                    Written in ReactJS for the frontend and Express for the backend, bundled with a static dataset for efficiency.<br>
+                                                    This project is being hosted on Netlify (client) and Render (server). Expect some occasional delays in service on the first usages as this free instance of Render does spin down with inactivity.<br>
+                                                    Currently still missing some data and refining some presentation aspects, but overall, it does its job (for Generations 1-7, excluding Go and Let's Go games, for now -- subject to change)</p>
+                                    <a href="https://pokemon-checker.netlify.app/" target="_blank">
+                                        <button class="btn btn-info">
+                                            <i class="fa-solid fa-globe"></i>
+                                            See it in action!
+                                        </button>
+                                    </a> <br> <br>
+                                    <a href="https://github.com/VHCosta/pokemon-availability-client" target="_blank">
+                                        <button class="btn btn-primary">
+                                            <i class="fab fa-fw fa-github"></i>
+                                            See on GitHub (Client)
+                                        </button>
+                                    </a>
+                                    <a href="https://github.com/VHCosta/pokemon-availability-server" target="_blank">
+                                        <button class="btn btn-primary">
+                                            <i class="fab fa-fw fa-github"></i>
+                                            See on GitHub (Server)
+                                        </button>
+                                    </a>
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
                                     </button>
