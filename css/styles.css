@@ -12,31 +12,8 @@
  */
 :root {
   /* Core colors */
-  --bs-primary: #1abc9c;
-  --bs-secondary: #2c3e50;
-  --bs-dark-secondary: #1a252f; /* Added for footer copyright */
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
-  --bs-gray-100: #f8f9fa;
-  --bs-gray-200: #e9ecef;
-  --bs-gray-300: #dee2e6;
-  --bs-gray-400: #ced4da;
-  --bs-gray-500: #adb5bd;
-  --bs-gray-600: #6c757d;
-  --bs-gray-700: #495057;
-  --bs-gray-800: #343a40;
-  --bs-gray-900: #212529;
-  --bs-primary: #1a53bc;
-  --bs-secondary: #2c3e50;
-  --bs-success: #198754;
-  --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
-  --bs-primary-rgb: 26, 188, 156;
-  --bs-secondary-rgb: 44, 62, 80;
+  --bs-primary-rgb: 0, 84, 119;
+  --bs-secondary-rgb: 0, 0, 0;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -47,6 +24,27 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
+  --bs-primary: rgb(var(--bs-primary-rgb));
+  --bs-secondary: rgb(var(--bs-secondary-rgb));
+  --bs-dark-secondary: rgb(26, 37, 47); /* Added for footer copyright */
+  --bs-white: rgb(255, 255, 255);
+  --bs-gray: rgb(108, 117, 125);
+  --bs-gray-dark: rgb(52, 58, 64);
+  --bs-gray-100: rgb(248, 249, 250);
+  --bs-gray-200: rgb(233, 236, 239);
+  --bs-gray-300: rgb(222, 226, 230);
+  --bs-gray-400: rgb(206, 212, 218);
+  --bs-gray-500: rgb(173, 181, 189);
+  --bs-gray-600: rgb(108, 117, 125);
+  --bs-gray-700: rgb(73, 80, 87);
+  --bs-gray-800: rgb(52, 58, 64);
+  --bs-gray-900: rgb(33, 37, 41);
+  --bs-success: rgb(25, 135, 84);
+  --bs-info: rgb(13, 202, 240);
+  --bs-warning: rgb(255, 193, 7);
+  --bs-danger: rgb(220, 53, 69);
+  --bs-light: rgb(248, 249, 250);
+  --bs-dark: rgb(33, 37, 41);
   --bs-font-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -66,7 +64,7 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #1abc9c;
+  --bs-link-color: var(--bs-primary);
   --bs-link-hover-color: #15967d;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
@@ -565,8 +563,8 @@ textarea.form-control {
 
 .btn-primary {
   --bs-btn-color: var(--bs-white);
-  --bs-btn-bg: #1abc9c;
-  --bs-btn-border-color: #1abc9c;
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
   --bs-btn-hover-color: var(--bs-white);
   --bs-btn-hover-bg: #16a085;
   --bs-btn-hover-border-color: #15967d;
@@ -576,14 +574,14 @@ textarea.form-control {
   --bs-btn-active-border-color: #148d75;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: var(--bs-white);
-  --bs-btn-disabled-bg: #1abc9c;
-  --bs-btn-disabled-border-color: #1abc9c;
+  --bs-btn-disabled-bg: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
 }
 
 .btn-secondary {
   --bs-btn-color: var(--bs-white);
-  --bs-btn-bg: #2c3e50;
-  --bs-btn-border-color: #2c3e50;
+  --bs-btn-bg: var(--bs-secondary);
+  --bs-btn-border-color: var(--bs-secondary);
   --bs-btn-hover-color: var(--bs-white);
   --bs-btn-hover-bg: #253544;
   --bs-btn-hover-border-color: #233240;
@@ -593,8 +591,8 @@ textarea.form-control {
   --bs-btn-active-border-color: #212f3c;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: var(--bs-white);
-  --bs-btn-disabled-bg: #2c3e50;
-  --bs-btn-disabled-border-color: #2c3e50;
+  --bs-btn-disabled-bg: var(--bs-secondary);
+  --bs-btn-disabled-border-color: var(--bs-secondary);
 }
 
 .btn-info {
@@ -1587,7 +1585,7 @@ html {
 }
 
 .portfolio-modal .btn-close {
-  color: #1abc9c;
+  color: var(--bs-primary);
   font-size: 2rem;
   padding: 1rem;
 }
